@@ -10,5 +10,5 @@ app.get('/authors', authorController.listAuthors);
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log(`Ouvindo a porta ${PORT}`);
+  console.log(`Servidor online na porta \x1b[03;94m${PORT}\x1b[00m`);
 });
