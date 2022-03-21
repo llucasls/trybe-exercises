@@ -16,7 +16,13 @@ describe('Ao chamar o controller de create', () => {
         .returns(response);
       response.send = sinon.stub()
         .returns();
+      sinon.stub(MoviesService, 'create')
+        .resolves(false);
     })
+
+    after(() => {
+      MoviesService.create.restore();
+    });
 
     it('é chamado o status com o código 400', async () => {
       await MoviesController.create(request, response);
@@ -47,7 +53,13 @@ describe('Ao chamar o controller de create', () => {
         .returns(response);
       response.send = sinon.stub()
         .returns();
+      sinon.stub(MoviesService, 'create')
+        .resolves(true);
     })
+
+    after(() => {
+      MoviesService.create.restore();
+    });
 
     it('é chamado o status com o código 201', async () => {
       await MoviesController.create(request, response);
