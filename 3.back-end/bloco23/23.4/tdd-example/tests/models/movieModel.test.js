@@ -1,13 +1,6 @@
 const { expect } = require('chai');
 
-/*
-  Como ainda não temos a implementação, vamos fixar
-  um objeto simulando os métodos que iremos desenvolver,
-  porém, eles não terão nenhum comportamento
-*/
-const MoviesModel = {
-  create: () => {}
-};
+const MoviesModel = require('../../src/models/movieModel');
 
 describe('Insere um novo filme no BD', () => {
   const payloadMovie = {
@@ -21,7 +14,7 @@ describe('Insere um novo filme no BD', () => {
     it('retorna um objeto', async () => {
       const response = await MoviesModel.create(payloadMovie);
 
-      expect(response).to.be.a('object')
+      expect(response).to.be.an('object')
     });
 
     it('tal objeto possui o "id" do novo filme inserido', async () => {
