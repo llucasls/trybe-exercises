@@ -1,0 +1,2 @@
+use class;
+db.bios.findOne({ _id: 8 }, { _id: false, name: true, birth: true });
