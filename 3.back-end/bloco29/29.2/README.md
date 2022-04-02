@@ -6,10 +6,10 @@
 6. Retorne o total de super-heróis com 2.00m ou mais.
 7. Selecione todos os super-heróis que têm olhos verdes.
 8. Retorne o total de super-heróis com olhos azuis.
-9. Utilizando o operador $in , selecione todos os super-heróis com cabelos pretos ou carecas ("No Hair").
+9. Utilizando o operador $in, selecione todos os super-heróis com cabelos pretos ou carecas ("No Hair").
 10. Retorne o total de super-heróis com cabelos pretos ou carecas ("No Hair").
 11. Retorne o total de super-heróis que não tenham cabelos pretos ou não sejam carecas.
-12. Utilizando o operador $not , retorne o total de super-heróis que não tenham mais de 1.80m de altura.
+12. Utilizando o operador $not, retorne o total de super-heróis que não tenham mais de 1.80m de altura.
 13. Selecione todos os super-heróis que não sejam humanos nem sejam maiores do que 1.80m.
 14. Selecione todos os super-heróis com 1.80m ou 2.00m de altura e que sejam publicados pela Marvel Comics.
 15. Selecione todos os super-heróis que pesem entre 80kg e 100kg, sejam Humanos ou Mutantes e não sejam publicados pela DC Comics.
