@@ -13,6 +13,11 @@ class BookModel {
     return books;
   }
 
+  public async getBook(id: string): Promise<IBook | null> {
+    const book = await this.bookModel.findOne({ _id: id });
+    return book;
+  }
+
   public async createBook(bookData: object): Promise<IBook> {
     const book = await this.bookModel.create(bookData);
     return book;
