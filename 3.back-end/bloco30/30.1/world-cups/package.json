@@ -2,8 +2,11 @@
   "name": "world-cups",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/api/server.js",
   "scripts": {
+    "prestart": "tsc",
+    "start": "node .",
+    "dev": "nodemon --ext ts,json --watch ./src --exec ts-node src/api/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
