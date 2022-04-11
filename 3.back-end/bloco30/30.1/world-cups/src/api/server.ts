@@ -1,7 +1,7 @@
 import App from './app';
 import 'dotenv/config';
 
-const app = new App().express;
+const { express: app } = new App();
 
 const port = process.env.PORT || 3000;
 
