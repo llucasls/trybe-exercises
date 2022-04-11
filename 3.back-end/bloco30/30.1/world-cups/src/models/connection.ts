@@ -1,8 +1,5 @@
 import { connect, ConnectOptions } from 'mongoose';
-import 'dotenv/config';
 
-const host = process.env.HOST || '127.0.0.1';
-const port = process.env.PORT || '3000';
 const dbName = 'world_cups';
 
 const options: ConnectOptions = {
@@ -10,6 +7,9 @@ const options: ConnectOptions = {
   dbName,
 };
 
-const connection = connect(`mongodb://${host}:${port}/`, options);
+const connection = (host: string, port: string | number) =>
+  connect(`mongodb://${host}:${port}/`, options)
+    .then((conn) => conn)
+    .catch(console.error)
 
 export default connection;
