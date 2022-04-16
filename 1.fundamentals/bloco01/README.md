@@ -24,3 +24,8 @@ echo $PATH
 ```
 Você também pode executar trechos de um shell script no `vscode`, através da
 extensão `code runner`.
+
+###### comandos que eu provavelmente vou esquecer:
+apropos
+fg
+bg
