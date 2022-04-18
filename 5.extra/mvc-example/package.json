@@ -17,6 +17,7 @@
     "mysql2": "^2.3.3"
   },
   "devDependencies": {
+    "async": "^3.2.3",
     "dotenv": "^16.0.0"
   }
 }
