@@ -1,5 +1,6 @@
 from sys import argv
 
+
 nome = ''
 if len(argv) > 1:
     for index in range(1, len(argv)):
