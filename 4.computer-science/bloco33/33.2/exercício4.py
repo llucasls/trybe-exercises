@@ -24,8 +24,8 @@ for category in total_categories:
 for category in categories_frequency:
     categories_percent[category] = categories_frequency[category] / total_books
 
-with open("book_categories.csv", "w", encoding = "utf-8") as file:
-    writer = csv.writer(file, delimiter = ",", quotechar = '"')
+with open("book_categories.csv", "w", encoding="utf-8") as file:
+    writer = csv.writer(file, delimiter=",", quotechar='"')
     header = ("categoria","porcentagem")
     writer.writerow(header)
     for category in categories_percent:
