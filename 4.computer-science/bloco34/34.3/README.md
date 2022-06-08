@@ -52,5 +52,5 @@ Conta de Suporte e Vendas: Acesso aos sistemas vendas e suporte
 Conta de Gerente: Acesso a todos os sistemas vendas, financeiro e suporte
 ```
 
-👀 De olho na dica: esse problema lembra o de combos na hamburgueria, que você já conhece! Aqui precisamos de uma implementação semelhante, utilizando o padrão Factory.
+👀 De olho na dica: esse problema lembra o de combos na hamburgueria, que você já conhece! Aqui precisamos de uma implementação semelhante, utilizando o padrão Factory.  
 👀 De olho na dica: a Account pode ser sua Interface Criadora, que será herdada pelas fábricas, que podem ser classes referentes aos perfis de acessos.
