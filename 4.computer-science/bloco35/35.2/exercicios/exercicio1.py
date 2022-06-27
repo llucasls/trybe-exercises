@@ -5,7 +5,7 @@ import requests
 URL = "https://httpbin.org/encoding/utf8"
 def make_request(url, timeout=5):
     try:
-        response = requests.get(url)
+        response = requests.get(url, timeout=timeout)
     except requests.HTTPError:
         exit(1)
     except requests.ReadTimeout:

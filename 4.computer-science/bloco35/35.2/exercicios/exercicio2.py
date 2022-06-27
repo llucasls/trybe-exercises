@@ -2,11 +2,11 @@ import requests
 import json
 
 
-def get_users():
+def get_users(timeout=5):
     URL = "https://api.github.com/users"
     user_list = []
     try:
-        response = requests.get(URL)
+        response = requests.get(URL, timeout=timeout)
     except requests.HTTPError:
         exit(1)
     except requests.ReadTimeout:
