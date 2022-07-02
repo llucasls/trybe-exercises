@@ -9,14 +9,7 @@ def selection_sort(numbers):
                 min_element_index = search_index
 
         # Troca os elementos de posição
-        current_element = numbers[index]
-        numbers[index] = numbers[min_element_index]
-        numbers[min_element_index] = current_element
+        index2 = min_element_index
+        numbers[index], numbers[index2] = numbers[index2], numbers[index]
 
     return numbers
-
-
-numbers = [7, 5, 9, 2, 6, 8]
-print(f"Lista inicial: {numbers}")
-ordered_numbers = selection_sort(numbers)
-print(f"Lista final: {ordered_numbers}")
