@@ -17,7 +17,9 @@ class SecondaryMemory:
         value = str(value)
         next_index = str(len(listdir(self.disk_path)))
         next_file_name = join(self.disk_path, next_index)
-        # Sua implementação
+        file = open(next_file_name, mode="w")
+        file.write(value)
+        file.close()
 
     def get(self, index):
         index = str(index)
