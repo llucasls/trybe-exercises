@@ -24,7 +24,7 @@ for number in RANDOM_NUMBERS:
 timer("Números carregados na memória principal", main_load_init_time)
 
 main_get_init_time = perf_counter()
-main_sum = sum([main.get(i) for i in range(len(RANDOM_NUMBERS))])
+main_sum = sum([int(main.get(i)) for i in range(len(RANDOM_NUMBERS))])
 timer(f"Soma na memória principal: {main_sum}", main_get_init_time)
 
 main_clean_init_time = perf_counter()
@@ -39,7 +39,8 @@ for number in RANDOM_NUMBERS:
 timer("Números carregados na memória secundária", secondary_load_initial_time)
 
 secondary_get_init_time = perf_counter()
-secondary_sum = sum([secondary.get(i) for i in range(len(RANDOM_NUMBERS))])
+secondary_sum = sum(
+    [int(secondary.get(i)) for i in range(len(RANDOM_NUMBERS))])
 timer(f"Soma na memória secundária: {secondary_sum}", secondary_get_init_time)
 
 secondary_clean_init_time = perf_counter()
