@@ -3,7 +3,7 @@ class MainMemory:
         self.clean()
 
     def load(self, value):
-        # Sua implementação
+        self.loaded_memory.append(value)
 
     def get(self, index):
         # Sua implementação
