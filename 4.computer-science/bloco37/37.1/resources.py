@@ -18,13 +18,7 @@ desired_cpu_information = {
 
 # Memória
 def get_info(entry):
-    info_list = entry.split(" ")
-    spaces = 0
-    for value in info_list:
-        if value == "":
-            spaces += 1
-    for index in range(spaces):
-        info_list.remove("")
+    info_list = entry.split()
     return int(info_list[1])
 
 
