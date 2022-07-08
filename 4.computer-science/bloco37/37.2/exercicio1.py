@@ -1,5 +1,10 @@
 def max_stability_time(sample):
-    sample = [str(value) for value in sample]
-    result = "".join(sample).split('0')
-    result.sort()
-    return len(result[-1])
+    streak = 0
+    record = 0
+    for value in sample:
+        if value == 1:
+            streak += 1
+        else:
+            streak = 0
+        record = max(record, streak)
+    return record
