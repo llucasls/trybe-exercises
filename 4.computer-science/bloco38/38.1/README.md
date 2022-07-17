@@ -1,3 +1,5 @@
+Os exercícios foram retirados do banco de questões utilizadas em processos de contratação de grandes empresas (questões liberadas para estudo).
+
 ### Exercício 1 - Facebook
 
 Você receberá uma lista de palavras e uma string. Escreva uma função que decida quais palavras podem ser formadas com os caracteres da string (cada caractere só pode ser utilizado uma vez). Retorne a soma do comprimento das palavras escolhidas.  
