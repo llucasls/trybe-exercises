@@ -4,7 +4,6 @@ import json
 
 def get_users(timeout=5):
     URL = "https://api.github.com/users"
-    user_list = []
     try:
         response = requests.get(URL, timeout=timeout)
     except requests.HTTPError:
@@ -14,5 +13,6 @@ def get_users(timeout=5):
     users = json.loads(response.text)
     for user in users:
         print(f'{user["login"]} {user["url"]}')
+
 
 get_users()
