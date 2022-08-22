@@ -1,0 +1,2 @@
+USE hr;
+SELECT (ROUND(SUM(SALARY), 2)) AS PAYROLL FROM employees;
