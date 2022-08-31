@@ -1,23 +1,9 @@
 {
   "name": "mvc-example",
-  "version": "1.0.0",
   "description": "Exemplo para estudo da arquitetura MVC.",
   "main": "index.js",
   "scripts": {
     "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.19.2",
-    "ejs": "^3.1.8",
-    "express": "^4.17.3",
-    "mysql2": "^2.3.3"
-  },
-  "devDependencies": {
-    "async": "^3.2.3",
-    "dotenv": "^16.0.0"
   }
 }
