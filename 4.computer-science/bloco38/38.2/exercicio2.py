@@ -6,7 +6,7 @@ def biggest_substring(string):
         if char not in charset:
             charset.add(char)
             streak += 1
-            record = max(streak, len(charset))
+            record = max(streak, record)
         else:
             charset.clear()
             charset.add(char)
