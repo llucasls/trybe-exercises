@@ -1,9 +1,0 @@
-{
-  "name": "exercicio3",
-  "main": "dist/index.js",
-  "scripts": {
-    "start": "npm run build && node .",
-    "dev": "ts-node-dev --respawn --pretty --transpile-only index.ts",
-    "build": "tsc"
-  }
-}

@@ -1,2 +1,0 @@
-use class;
-db.books.countDocuments({ status: 'PUBLISH' });

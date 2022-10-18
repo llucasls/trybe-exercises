@@ -1,8 +1,0 @@
-{
-  "name": "srp-example",
-  "main": "src/index.ts",
-  "scripts": {
-    "test": "mocha -r ts-node/register ./tests/**/*.{test,spec}.{t,j}s",
-    "lint": "eslint  -c .eslintrc.json src/**/*.{t,j}s"
-  }
-}

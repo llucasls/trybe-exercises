@@ -1,5 +1,0 @@
-use class;
-db.books.find(
-  {},
-  { _id: true, title: true, authors: true, status: 'MEAP' }
-).skip(5).limit(10);

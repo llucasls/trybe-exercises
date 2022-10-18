@@ -1,8 +1,0 @@
-{
-  "name": "mongoose-poo-example",
-  "main": "src/index.js",
-  "scripts": {
-    "start": "ts-node-dev src/index.ts",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
-  }
-}

@@ -1,8 +1,0 @@
-use class;
-db.superheroes.countDocuments({
-  $and: [
-    { race: { $exists: true } },
-    { race: { $ne: 'Human' } },
-    { 'aspects.height': { $not: { $gt: 180 } } },
-  ],
-});

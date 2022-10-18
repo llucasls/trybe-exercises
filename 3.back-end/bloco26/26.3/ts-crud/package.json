@@ -1,9 +1,0 @@
-{
-  "name": "ts-crud",
-  "main": "dist/index.js",
-  "scripts": {
-    "start": "npm run build && node ./dist/index.js",
-    "dev": "tsnd index.ts",
-    "build": "tsc"
-  }
-}

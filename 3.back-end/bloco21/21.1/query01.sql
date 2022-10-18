@@ -1,2 +1,0 @@
-USE hr;
-SELECT MAX(SALARY) FROM employees;

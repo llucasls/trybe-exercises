@@ -1,8 +1,0 @@
-{
-  "name": "tdd-example",
-  "main": "index.js",
-  "scripts": {
-    "start": "node .",
-    "test": "mocha ./tests/**/*$NAME*.test.js --exit"
-  }
-}
